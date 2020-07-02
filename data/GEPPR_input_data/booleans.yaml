@@ -1,0 +1,17 @@
+### RESERVE OPTIONS
+includeDownwardReserves: false
+includeReserveProvisionCosts: false
+includeReserveActivationCosts: false # If false, activation of reserves is not included in OPEX calculation
+hasStaticReserves: false
+
+### OPERATIONAL OPTIONS
+# NOTE: not implemented yet
+isOperationalModel: true # If true, won't install new capacity
+
+### MISC OPTIONS
+multiplyStandardDeviationByNormalisedGenerationProfile: false
+addStandardDeviationsToObjective: false # Currently required in order to force std of forecast error to it's smallest possible value when using SOC constraints
+includeRESPenetrationTarget: false # Not used anymore
+includePlanningReserveMargin: false
+includeBrownfieldCapacity: false
+timeOptimizationBool: true # Determines whether optimisation time is recorded

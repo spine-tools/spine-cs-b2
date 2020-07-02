@@ -1,0 +1,58 @@
+# To keep things simple, I just used data from Kris' paper on flexibility
+# [1] K. Poncelet, E. Delarue, and W. D’haeseleer, “Unit commitment constraints in long-term planning models: Relevance, pitfalls and the role of assumptions on flexibility,” Appl. Energy, vol. 258, no. August 2019, p. 113843, 2020.
+
+dispatchableGeneration:
+ # Coal:
+ #  lifetime: 39 # years
+ #  variableOperationAndMaintenanceCost: 0.00 # [M€/GWh]
+ #  # variableOperationAndMaintenanceCost: 0.006 # [M€/GWh]
+ #  fixedOperationAndMaintenanceCost: 33.0 # [M€/GW/year]
+ #  availabilityFactor: 0.85 # Fraction of year which unit is available
+ #  investmentCost: 1700.0 # [M€/GW]
+ #  fuelType: Coal # Fuel that the technology uses
+ #  efficiency: 0.49 # [-]
+ #  installedCapacity: 0.0
+
+ # CCGT:
+ #  lifetime: 27 # years
+ #  variableOperationAndMaintenanceCost: 0.0 # [M€/GWh]
+ #  # variableOperationAndMaintenanceCost: 0.04 # [M€/GWh]
+ #  fixedOperationAndMaintenanceCost: 20.0 # [M€/GW/year]
+ #  availabilityFactor: 0.85 # Fraction of year which unit is available
+ #  investmentCost: 860.0 # [M€/GW]
+ #  fuelType: Gas # Fuel that the technology uses
+ #  efficiency: 0.64 # [-]
+ #  installedCapacity: 0.0
+
+ OCGT:
+  lifetime: 17 # years
+  variableOperationAndMaintenanceCost: 0.0 # [M€/GWh]
+  # variableOperationAndMaintenanceCost: 0.04 # [M€/GWh]
+  fixedOperationAndMaintenanceCost: 17.0 # [M€/GW/year]
+  availabilityFactor: 0.85 # Fraction of year which unit is available
+  investmentCost: 570.0 # [M€/GW]
+  fuelType: Gas # Fuel that the technology uses
+  efficiency: 0.45 # [-]
+  installedCapacity: 15.0
+
+intermittentGeneration:
+ Onshore Wind: # Onshore
+  lifetime: 26
+  variableOperationAndMaintenanceCost: 0.0
+  fixedOperationAndMaintenanceCost: 21.0 # [M€/GW/year]
+  investmentCost: 1110.0 # [M€/GW]
+  installedCapacity: 50.0
+
+ Solar: # Onshore
+  lifetime: 31
+  variableOperationAndMaintenanceCost: 0.0
+  fixedOperationAndMaintenanceCost: 12.0 # [M€/GW/year]
+  investmentCost: 780.0 # [M€/GW]
+  installedCapacity: 20.0
+
+fuelTypes:
+  Gas:
+    costPerThermalEnergyUnit: 0.0322 # [M€/GWh]
+  Coal:
+    costPerThermalEnergyUnit: 0.0233 # [M€/GWh]
+    # tonnesCO2PerThermalEnergyUnit: 0.100 # [Gt/GWh] - not used

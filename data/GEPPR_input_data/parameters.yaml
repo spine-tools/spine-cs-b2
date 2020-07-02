@@ -1,0 +1,25 @@
+# TIMESERIES DATA PATH AND COLUMN NAMES
+relativePathTimeSeriesCSV: "EO_days_32_timeseries.csv" # Placeholder for now
+timeSeriesCSVColumnNames: # Names of the columns in the CSV file
+  Node: "N"
+  Year: "Y"
+  Period: "P"
+  Timestep: "T"
+  Weight: "W"
+  DaysOfTheYear: "DOY"
+  Load: "Load"
+  Onshore Wind: "LFW" # these are the renewable profiles for RES
+  Solar: "LFS"
+relativePathChronologyCSV: "EO_days_32_ordering.csv"
+
+### MISC PARAMETERS
+RESPenetrationTarget: 0.0 # as fraction of total electricity [-]
+planningReserveMarginType: "none" # all, peak or none - PRM applied to all timesteps or peak timestep
+planningReserveMargin: 0.0 # Fraction of total installed capacity
+discountRate: 0.0
+valueOfLostLoad: 10.0 # [M€/GWh]
+CO2Price: 0.0 # [M€/Gt]
+samplingTime: 1 # [hours]
+optimizer: Gurobi # It's better to specify this in param, since you can pass the actual optimizer_factory
+modelType: "Spine storage model"
+chronologyUseageType: "mapping" # Maps representative variables to non rep ones

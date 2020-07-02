@@ -1,0 +1,24 @@
+# To keep things simple, I just used data from Kris' paper on flexibility
+# [1] K. Poncelet, E. Delarue, and W. D’haeseleer, “Unit commitment constraints in long-term planning models: Relevance, pitfalls and the role of assumptions on flexibility,” Appl. Energy, vol. 258, no. August 2019, p. 113843, 2020.
+
+# Kris can invest in power, but I can't, so I take the mid range of 4 - 16 hours for the discharge duration in this case for hydro (10) and 1 hour for batteries. I don't take availability into account.
+storageTechnologies:
+ # Hydro:
+ #  type: "long term"
+ #  lifetime: 84
+ #  roundTripEfficiency: 0.75
+ #  investmentCost: 101.6 # [M€/GWh] - added FOM to this
+ #  marginalCost: 0.005 # [M€/GWh] - taken from VOM
+ #  maxChargeDuration: 10 # [hours]
+ #  maxDischargeDuration: 10 # [hours]
+ #  installedEnergyCapacity: 0.0
+
+ Battery:
+  type: "long term"
+  lifetime: 12
+  roundTripEfficiency: 0.9025
+  investmentCost: 354.3 # [M€/GWh]
+  marginalCost: 0.0
+  maxChargeDuration: 3 # [hours]
+  maxDischargeDuration: 3 # [hours]
+  installedEnergyCapacity: 15.0

@@ -1,0 +1,95 @@
+{
+    "project": {
+        "version": 1,
+        "name": "case_study_b2",
+        "description": "",
+        "tool_specifications": [],
+        "connections": []
+    },
+    "objects": {
+        "Data Stores": {
+            "Case Study B2 Out": {
+                "type": "Data Store",
+                "short name": "case_study_b2_out",
+                "description": "",
+                "x": 79.28024909105758,
+                "y": -39.9363177369498,
+                "url": {
+                    "dialect": "sqlite",
+                    "username": "",
+                    "password": "",
+                    "host": "",
+                    "port": "",
+                    "database": {
+                        "type": "path",
+                        "relative": true,
+                        "path": ".spinetoolbox/items/case_study_b2_out/case_study_b2_out.sqlite"
+                    }
+                }
+            },
+            "Case Study B2": {
+                "type": "Data Store",
+                "short name": "case_study_b2",
+                "description": "",
+                "x": -90.79574012034197,
+                "y": -40.17700713031148,
+                "url": {
+                    "dialect": "sqlite",
+                    "username": "",
+                    "password": "",
+                    "host": "",
+                    "port": "",
+                    "database": {
+                        "type": "path",
+                        "relative": true,
+                        "path": ".spinetoolbox/items/case_study_b2/case_study_b2.sqlite"
+                    }
+                }
+            },
+            "Case Study B2 Rolling": {
+                "type": "Data Store",
+                "short name": "case_study_b2_rolling",
+                "description": "",
+                "x": -89.6060309812469,
+                "y": 60.07863709395643,
+                "url": {
+                    "dialect": "sqlite",
+                    "username": "",
+                    "password": "",
+                    "host": "",
+                    "port": "",
+                    "database": {
+                        "type": "path",
+                        "relative": true,
+                        "path": ".spinetoolbox/items/case_study_b2_rolling/case_study_b2_rolling.sqlite"
+                    }
+                }
+            },
+            "Case Study B2 Rolling Out": {
+                "type": "Data Store",
+                "short name": "case_study_b2_rolling_out",
+                "description": "",
+                "x": 76.20759348124693,
+                "y": 59.128545026925906,
+                "url": {
+                    "dialect": "sqlite",
+                    "username": "",
+                    "password": "",
+                    "host": "",
+                    "port": "",
+                    "database": {
+                        "type": "path",
+                        "relative": true,
+                        "path": ".spinetoolbox/items/case_study_b2_rolling_out/case_study_b2_rolling_out.sqlite"
+                    }
+                }
+            }
+        },
+        "Data Connections": {},
+        "Tools": {},
+        "Views": {},
+        "Importers": {},
+        "Exporters": {},
+        "Manipulators": {}
+    }
+}
