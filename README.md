@@ -1,5 +1,7 @@
 # Spine Case Study B2: Representative periods for storage
 
+** This repository is archived and no longer maintained. You may run into issues.**
+
 This is a Spine Toolbox project for ...
 
 # Instructions for use
